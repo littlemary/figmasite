@@ -160,3 +160,12 @@ section:nth-child(odd){
     padding-bottom: 75px;
     text-align: center;
 }
+
+.gallery {
+    display: block;
+}
+.gallery_item {
+    display: block;
+}
+.gallery-btn {
+}
