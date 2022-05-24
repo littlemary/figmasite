@@ -162,10 +162,50 @@ section:nth-child(odd){
 }
 
 .gallery {
-    display: block;
+    display: grid;
+    grid-template-columns: 70px repeat(3, 1fr) 70px;
+
 }
 .gallery_item {
+    width: 270px;
+    height: 425px;
     display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.gallery-h5{
+    padding-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 45px;
+    color: #545454;
+}
+.gallery_item > img{
+    height: 227px;
+    /* background-color: #fff; */
 }
 .gallery-btn {
+    border: 2px solid var(--accent-color);
+    background-color: #fff;
+}
+
+.gallery-btn:hover{
+    background-color: var(--accent-color);
+}
+
+.gallery-arrow{
+    text-align: center;
+}
+.btn-nextprev{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+
+    border: 2px solid var(--accent-color);
+    background-color: #fff;
+}
+
+.btn-nextprev:hover, .btn-nextprev:active{
+    background-color: var(--accent-color);
 }
